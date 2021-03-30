@@ -1,15 +1,12 @@
 /* eslint-disable react/jsx-filename-extension */
 import PropTypes from 'prop-types';
+import React from 'react';
 
-function Button(props) {
-  return (
-    <div>
-      Stuff goes here
-      {' '}
-      {props.name}
-    </div>
-  );
-}
+const Button = ({ name }) => (
+  <div>
+    {name}
+  </div>
+);
 Button.propTypes = {
   name: PropTypes.string,
 

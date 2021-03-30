@@ -1,13 +1,13 @@
+/* eslint-disable react/jsx-filename-extension */
 import PropTypes from 'prop-types';
+import React from 'react';
 
-function Display(props) {
-  return (
-    <div>
-      Some stuff goes here
-      {props.result}
-    </div>
-  );
-}
+const Display = ({ result }) => (
+  <div>
+    {result}
+  </div>
+);
+
 Display.propTypes = {
   result: PropTypes.string,
 };
