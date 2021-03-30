@@ -16,6 +16,8 @@ You will build a calculator for Math-magicians Inc using create-react-app, a too
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Live version
+The live version of this project can be found [here](https://immense-refuge-69310.herokuapp.com/)
 
 ## Getting Started 
 Clone this repository into your PC and then navigate into the directory where you cloned it into.
