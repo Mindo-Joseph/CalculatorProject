@@ -1,3 +1,5 @@
+import operate from './operate';
+
 const calculate = (data, buttonName) => {
   const { total, next, operation } = data;
   const result = data;
@@ -26,6 +28,25 @@ const calculate = (data, buttonName) => {
     result.total = '';
     result.next = '';
     result.operation = '';
+  }
+  if (buttonName === '%') {
+    if (total && !next) {
+      result.total = operate(total, 100, '%');
+    }
+    if (next) {
+      result.next = operate(next, 100, '%');
+    }
+  }
+  if (['+', 'X', '-', '÷', '='].includes(buttonName)) {
+    if (total && next && operation) {
+      const newOperation = buttonName === '=' ? '' : buttonName;
+      result.total = operate(total, next, operation);
+      result.operation = newOperation;
+    }
+
+    if (total && !next) {
+      result.operation = buttonName;
+    }
   }
 };
 
