@@ -1,11 +1,12 @@
 /* eslint-disable react/jsx-filename-extension */
 import PropTypes from 'prop-types';
 import React from 'react';
+import styles from './styles.module.css';
 
 const Display = ({ total, next, operation }) => (
-  <div>
-    <p>{next || total}</p>
-    <span>
+  <div className={styles.display}>
+    <p className="">{next || total}</p>
+    <span className={styles.displaySubtitle}>
       {next && (total || null)}
       {' '}
       {operation || null}
