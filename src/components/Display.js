@@ -1,17 +1,27 @@
 /* eslint-disable react/jsx-filename-extension */
 import PropTypes from 'prop-types';
 import React from 'react';
+import styles from './styles.module.css';
 
-const Display = ({ result }) => (
-  <div>
-    {result}
+const Display = ({ total, next, operation }) => (
+  <div className={styles.display}>
+    <p className="">{next || total}</p>
+    <span className={styles.displaySubtitle}>
+      {next && (total || null)}
+      {' '}
+      {operation || null}
+    </span>
   </div>
 );
 
 Display.propTypes = {
-  result: PropTypes.string,
+  total: PropTypes.string,
+  operation: PropTypes.string,
+  next: PropTypes.string,
 };
 Display.defaultProps = {
-  result: 0,
+  total: '0',
+  next: undefined,
+  operation: undefined,
 };
 export default Display;
