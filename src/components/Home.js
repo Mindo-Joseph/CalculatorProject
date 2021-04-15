@@ -1,4 +1,5 @@
 /* eslint-disable max-len */
+import React from 'react';
 import Navbar from './Navbar';
 
 function Home() {
@@ -17,4 +18,5 @@ function Home() {
     </div>
   );
 }
+
 export default Home;
