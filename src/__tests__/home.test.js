@@ -7,11 +7,11 @@ import Home from '../components/Home';
 
 describe('Home', () => {
   test('renders the home component correctly', () => {
-    const quote = renderer.create(
+    const home = renderer.create(
       <BrowserRouter>
         <Home />
       </BrowserRouter>,
     ).toJSON();
-    expect(quote).toMatchSnapshot();
+    expect(home).toMatchSnapshot();
   });
 });
