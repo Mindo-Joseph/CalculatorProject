@@ -8,14 +8,16 @@
   justify-content: center;
   flex-direction: column;
 }
+
 .header {
   display: flex;
-  justify-content: space-between;
-  
+  justify-content: space-between;  
 }
+
 .header h1 {
   margin-top: 0;
 }
+
 .navbar {
   display: flex;
 }
@@ -25,17 +27,21 @@
   text-decoration: none;
   margin: 2%;
 }
+
 .app {
   margin-top: 30px;
 }
+
 .content {
   display: flex;
   flex-direction: column;
 }
+
 .contentCalc{
   display: flex;
   justify-content: space-between;
 }
+
 .display {
   font-family: digital, "Segoe UI", sans-serif;
   background-color: rgb(46, 99, 66);
