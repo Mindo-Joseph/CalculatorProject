@@ -1,9 +1,13 @@
+import Navbar from './Navbar';
+
 function Quote() {
   return (
     <div>
-      <h1>
-        Hello This is the quote Page
-      </h1>
+      <Navbar />
+      <h3>
+        Mathematics is not about numbers, equations, computations,
+        or algorithms: it is about understanding. –William Paul Thurston
+      </h3>
     </div>
   );
 }
