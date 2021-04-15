@@ -1,16 +1,12 @@
 /* eslint-disable max-len */
 import Navbar from './Navbar';
-import styles from './styles.module.css';
 
 function Home() {
   return (
     <div>
-      <div className={styles.header}>
-        <h1>
-          Math Magicians
-        </h1>
-        <Navbar />
-      </div>
+
+      <Navbar />
+
       <div className="content">
         <h3>Welcome to our site</h3>
         <div>
