@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Quotes renders the quotes component correctly 1`] = `
+<div>
+  <div
+    className="header"
+  >
+    <h1>
+      Math Magicians
+    </h1>
+    <div
+      className="navbar"
+    >
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        Home 
+      </a>
+      <a
+        href="/calculator"
+        onClick={[Function]}
+      >
+        Calculator 
+      </a>
+      <a
+        href="/quote"
+        onClick={[Function]}
+      >
+        Quote 
+      </a>
+    </div>
+  </div>
+  <h3>
+    Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding. –William Paul Thurston
+  </h3>
+</div>
+`;
