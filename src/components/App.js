@@ -1,35 +1,23 @@
 import '../App.css';
-import React, { Component } from 'react';
-import Display from './Display';
-import buttons from '../buttons/buttonstate';
-import ButtonPanel from './ButtonPanel';
-import calculate from '../logic/calculate';
-import styles from './styles.module.css';
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+import Home from './Home';
+import Calculator from './calculator';
+import Quote from './Quote';
+import Error from './Error';
 
-class App extends Component {
-  constructor(props) {
-    super(props);
+function App() {
+  return (
 
-    this.state = {
-      total: null,
-      next: null,
-      operation: null,
-    };
-  }
+    <main>
+      <Switch>
+        <Route path="/" component={Home} exact />
+        <Route path="/calculator" component={Calculator} />
+        <Route path="/quote" component={Quote} exact />
+        <Route component={Error} />
+      </Switch>
 
-  handleClick = (buttonName) => {
-    const newState = calculate(this.state, buttonName);
-    this.setState(newState);
-  };
-
-  render() {
-    const { total, next, operation } = this.state;
-    return (
-      <div className={styles.app}>
-        <Display total={total} next={next} operation={operation} />
-        <ButtonPanel data={this.state} buttons={buttons} clickHandler={this.handleClick} />
-      </div>
-    );
-  }
+    </main>
+  );
 }
 export default App;
